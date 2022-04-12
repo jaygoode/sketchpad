@@ -1,0 +1,11 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 16;
+}
+
+.gridSquare {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+}
