@@ -1,3 +1,7 @@
+:root {
+ --grid-size: 16;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -30,8 +34,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(16,1fr);
-    grid-template-rows: repeat(16,1fr);
+    grid-template-columns: repeat(var(--grid-size),1fr);
+    grid-template-rows: repeat(var(--grid-size),1fr);
     gap: .2rem;
     width: 960px;
     height: 960px;
