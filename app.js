@@ -9,17 +9,24 @@ for(i=1; i<=(16*16); i++){
     container.appendChild(gridSquare);
 };
 
-let gridSq = document.querySelectorAll('.gridSquare');
+const gridSq = document.querySelectorAll('.gridSquare');
 
+/*******eventlistener for each square********/
 gridSq.forEach((square) => {
     square.addEventListener('mouseenter', changeColor);
 });
 
+/*******change color function********/
 function changeColor(e) {
     e.target.style.backgroundColor = "black";
-    setTimeout()
+    
+
+/*******reset color for each square********/
+setTimeout(function() {
+    e.target.style.backgroundColor = "";
+  }, 1500);
 };
 
-setTimeout(function(e) {
-    e.target.style.backgroundColor = "";
-  }, 500);
+setTimeout(function() {
+	console.log('Hello world!');
+}, 1000);
