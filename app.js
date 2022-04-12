@@ -27,6 +27,7 @@ setTimeout(function() {
   }, 1500);
 };
 
-setTimeout(function() {
-	console.log('Hello world!');
-}, 1000);
+function reset() {
+    let answer = window.prompt("choose a grid size:", "1-100");
+     
+}
