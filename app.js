@@ -7,7 +7,7 @@ function generateGrid(){
     const gridSquare = document.createElement('div');
     // gridSquare.className = gridSquare;
     gridSquare.setAttribute('class', 'gridSquare');
-    gridSquare.textContent =[i];
+    // gridSquare.textContent =[i];
     container.appendChild(gridSquare);
 };
 
@@ -19,14 +19,16 @@ gridSq.forEach((square) => {
 });
 
 /*******change color function********/
+let randClr = Math.floor(Math.random() * 360)
 function changeColor(e) {
-    e.target.style.backgroundColor = "black";
+    e.target.style.backgroundColor = `hsl(${randClr}, 100%, 50%)`;
     
+
     
     /*******reset color for each square********/
     setTimeout(function() {
         e.target.style.backgroundColor = "";
-    }, 1500);
+    }, 5500);
 };
 };
 

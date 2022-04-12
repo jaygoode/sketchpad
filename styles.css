@@ -1,5 +1,6 @@
 :root {
  --grid-size: 16;
+ 
 }
 
 /* Box sizing rules */
@@ -29,18 +30,18 @@ body {
   }
 
   .reset{
-      background-color: rgb(37, 219, 37);
+      background-color: hsl(46, 72%, 50%);
   }
 
 .container {
     display: grid;
     grid-template-columns: repeat(var(--grid-size),1fr);
     grid-template-rows: repeat(var(--grid-size),1fr);
-    gap: .2rem;
-    width: 960px;
-    height: 960px;
+    gap: 0;
+    width: 800px;
+    height: 800px;
 }
 
 .gridSquare {
-    background-color: cyan;
+    background-color: hsl(180, 100%, 50%);
 }
