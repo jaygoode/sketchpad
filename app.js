@@ -2,8 +2,8 @@
 const container = document.querySelector('.container');
 
 for(i=1; i<=(16*16); i++){
-    const gridSquare = document.createElement('div');
-    gridSquare.className = gridSquare;
+    let gridSquare = document.createElement('div');
+    // gridSquare.className = gridSquare;
     gridSquare.setAttribute('class', 'gridSquare');
     gridSquare.textContent =[i];
     container.appendChild(gridSquare);
