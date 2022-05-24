@@ -2,14 +2,9 @@
 let gridSize = 16;
 const container = document.querySelector('.container');
 
-<<<<<<< HEAD
-for(i=1; i<=(16*16); i++){
-    let gridSquare = document.createElement('div');
-=======
 function generateGrid(){
     for(i=1; i<=(gridSize*gridSize); i++){
     const gridSquare = document.createElement('div');
->>>>>>> resetfunction
     // gridSquare.className = gridSquare;
     gridSquare.setAttribute('class', 'gridSquare');
     // gridSquare.textContent =[i];
